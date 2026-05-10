@@ -1,0 +1,86 @@
+/* Practice pad — full-bleed canvas */
+
+.pad-page main { padding: 0; }
+.pad-page .site-header { background: var(--paper); }
+
+.pad {
+  position: relative;
+  height: calc(100vh - 80px);
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+}
+.pad__canvas-wrap {
+  flex: 1;
+  position: relative;
+  background:
+    radial-gradient(circle at 1px 1px, var(--ink-faint) 1px, transparent 0) 0 0 / 24px 24px,
+    var(--paper);
+  background-position: 12px 12px;
+  border-bottom: 1px solid var(--rule);
+  touch-action: none;
+}
+.pad canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  cursor: crosshair;
+}
+.pad__toolbar {
+  display: flex; flex-wrap: wrap;
+  gap: var(--s-3);
+  padding: var(--s-3) var(--s-4);
+  align-items: center;
+  background: var(--paper-deep);
+  border-top: 1px solid var(--rule);
+}
+.pad__group {
+  display: inline-flex; gap: 0;
+  border: 1.5px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--paper);
+  overflow: hidden;
+}
+.pad__group button {
+  padding: 0.55em 0.9em;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  border-right: 1.5px solid var(--rule);
+}
+.pad__group button:last-child { border-right: 0; }
+.pad__group button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--paper);
+}
+.pad__swatches { display: inline-flex; gap: var(--s-2); }
+.pad__swatch {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--rule);
+  display: inline-block;
+  cursor: pointer;
+}
+.pad__swatch[aria-pressed='true'] {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+.pad__width {
+  display: inline-flex; align-items: center; gap: var(--s-2);
+  font-size: 0.9rem; color: var(--ink-soft);
+}
+.pad__width input[type='range'] { width: 120px; }
+.pad__actions { margin-left: auto; display: inline-flex; gap: var(--s-2); }
+.pad__hint {
+  position: absolute; bottom: var(--s-3); right: var(--s-4);
+  font-family: var(--font-hand);
+  color: var(--ink-faint);
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+@media (max-width: 720px) {
+  .pad__hint { display: none; }
+  .pad { height: calc(100vh - 70px); }
+}

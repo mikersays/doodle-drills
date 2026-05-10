@@ -1,0 +1,92 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Doodle Drills home" [ref=e5] [cursor=pointer]:
+        - /url: ../../../
+        - text: doodle drills
+        - generic [ref=e6]: .
+      - navigation "Main" [ref=e7]:
+        - link "Curriculum" [ref=e8] [cursor=pointer]:
+          - /url: ../../../curriculum/
+        - link "Progress" [ref=e9] [cursor=pointer]:
+          - /url: ../../../progress/
+        - link "Practice pad" [ref=e10] [cursor=pointer]:
+          - /url: ../../../practice-pad/
+        - link "About" [ref=e11] [cursor=pointer]:
+          - /url: ../../../about/
+      - button "Toggle theme" [ref=e12] [cursor=pointer]:
+        - img [ref=e13]
+        - generic [ref=e16]: Toggle theme
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - navigation [ref=e19]:
+        - link "Curriculum" [ref=e20] [cursor=pointer]:
+          - /url: ../../../curriculum/
+        - generic [ref=e21]: /
+        - 'link "Tier 4: Faces & Figures" [ref=e22] [cursor=pointer]':
+          - /url: ../
+        - generic [ref=e23]: /
+        - generic [ref=e24]: The Star Person
+      - link "T4 · 3/6 Faces & Figures" [ref=e25] [cursor=pointer]:
+        - /url: ../
+        - text: T4 · 3/6
+        - generic [ref=e26]: Faces & Figures
+      - generic [ref=e27]:
+        - heading "The Star Person" [level=1] [ref=e28]
+        - generic [ref=e29]: A 5-line full-body figure that’s faster than a stick figure and infinitely more expressive.
+      - generic [ref=e30]:
+        - generic [ref=e31]: aim for this
+        - img [ref=e33]:
+          - generic [ref=e38]: neutral
+          - generic [ref=e39]: arms up
+      - group [ref=e40]:
+        - generic "+ Compare your paper to the reference" [ref=e41] [cursor=pointer]
+      - heading "How to do it" [level=2] [ref=e42]
+      - list [ref=e43]:
+        - listitem [ref=e44]: Draw a circle (head).
+        - listitem [ref=e45]: Draw a five-pointed star shape below it, but the top point is hidden behind the head. The two upper points become arms; the two lower points become legs; the center is the torso.
+        - listitem [ref=e46]: Practice 20 of these in a row, neutral posture.
+        - listitem [ref=e47]: "Now bend the limbs: arms reaching up, one knee raised, leaning forward."
+      - heading "What to look for" [level=2] [ref=e48]
+      - paragraph [ref=e49]: Tick whatever feels true. There’s no gold star — these are signals to yourself.
+      - list [ref=e50]:
+        - listitem [ref=e51]:
+          - checkbox "Twenty star people" [ref=e52] [cursor=pointer]
+          - generic [ref=e53] [cursor=pointer]: Twenty star people
+        - listitem [ref=e54]:
+          - checkbox "Each has a sense of body, not just sticks" [ref=e55] [cursor=pointer]
+          - generic [ref=e56] [cursor=pointer]: Each has a sense of body, not just sticks
+        - listitem [ref=e57]:
+          - checkbox "Five seconds per figure" [ref=e58] [cursor=pointer]
+          - generic [ref=e59] [cursor=pointer]: Five seconds per figure
+      - group [ref=e60]:
+        - generic "+ Use a timer · Suggested 10 minutes." [ref=e61] [cursor=pointer]:
+          - text: + Use a timer ·
+          - generic [ref=e62]: Suggested 10 minutes.
+      - heading "Common mistakes" [level=2] [ref=e63]
+      - list [ref=e64]:
+        - listitem [ref=e65]: × Making the head huge — keep it proportional.
+      - paragraph [ref=e66]: Mike Rohde, The Sketchnote Handbook.
+      - generic [ref=e67]:
+        - generic [ref=e68]: It doesn’t have to be perfect.
+        - button "Mark drill complete" [ref=e69] [cursor=pointer]
+      - navigation "Previous and next drill" [ref=e70]:
+        - link "← Previous Distinguishing Features" [ref=e71] [cursor=pointer]:
+          - /url: ../distinguishing-features/
+          - generic [ref=e72]: ← Previous
+          - text: Distinguishing Features
+        - link "Next → Gesture in 10 Seconds" [ref=e73] [cursor=pointer]:
+          - /url: ../gesture-in-10-seconds/
+          - generic [ref=e74]: Next →
+          - text: Gesture in 10 Seconds
+  - contentinfo [ref=e75]:
+    - generic [ref=e76]:
+      - generic [ref=e77]: Doodle Drills · a public-domain practice curriculum.
+      - generic [ref=e78]:
+        - link "About" [ref=e79] [cursor=pointer]:
+          - /url: ../../../about/
+        - text: ·
+        - link "Source" [ref=e80] [cursor=pointer]:
+          - /url: https://github.com

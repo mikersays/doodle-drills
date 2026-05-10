@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your progress — Doodle Drills</title>
+  <meta name="description" content="Your personal progress dashboard: completion percentage, per-tier progress, recently finished drills, and settings." />
+  <meta name="theme-color" content="#FBF7F0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,30..100;1,9..144,300..900,30..100&display=swap" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/curriculum.css" />
+</head>
+<body>
+  <div id="site-header" data-depth="1" data-current="progress"></div>
+
+  <main id="main">
+    <section class="container">
+      <div class="dash-head reveal reveal--1">
+        <span class="eyebrow">how’s it going</span>
+        <h1>Your progress</h1>
+      </div>
+
+      <div class="overall reveal reveal--2">
+        <span class="overall__caption">drills completed</span>
+        <span class="overall__num" data-overall-num>0%</span>
+        <span class="overall__sub" data-overall-sub>0 of 40</span>
+        <span class="overall__streak" data-streak style="display:none;"></span>
+      </div>
+
+      <div class="dash-cards reveal reveal--3">
+        <div data-recent class="dash-recent">
+          <p class="dash-empty">Nothing here yet — go finish your first drill, I’ll wait.</p>
+        </div>
+        <div class="settings-card">
+          <h3>Settings</h3>
+          <div class="settings-row">
+            <label for="theme">Theme</label>
+            <select id="theme" name="theme">
+              <option value="auto">auto · follow system</option>
+              <option value="light">light</option>
+              <option value="dark">dark</option>
+            </select>
+          </div>
+          <div class="settings-row">
+            <label for="hand">Drawing hand</label>
+            <select id="hand" name="hand">
+              <option value="right">right</option>
+              <option value="left">left</option>
+            </select>
+          </div>
+          <div class="settings-row">
+            <label for="showStreak">Show streak counter</label>
+            <input type="checkbox" id="showStreak" name="showStreak" />
+          </div>
+          <div class="settings-actions">
+            <button class="btn btn-ghost btn-sm" data-export type="button">Export JSON</button>
+            <button class="btn btn-ghost btn-sm" data-import type="button">Import JSON</button>
+            <input type="file" accept="application/json" data-import-input style="display:none;" />
+            <button class="btn btn-ghost btn-sm" data-reset type="button" style="color:var(--terracotta);border-color:var(--terracotta);">Reset everything</button>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 4rem;">Per-tier progress</h2>
+      <div data-tier-bars class="reveal reveal--4"></div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script type="module" src="../assets/js/header.js"></script>
+  <script type="module" src="../assets/js/progress-page.js"></script>
+</body>
+</html>

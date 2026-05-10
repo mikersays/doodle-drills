@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lost the page — Doodle Drills</title>
+  <meta name="theme-color" content="#FBF7F0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fraunces:opsz,wght@9..144,300..700&display=swap" />
+  <style>
+    :root { --paper:#FBF7F0; --ink:#1F1B16; --ink-soft:#5C5447; --terracotta:#C8553D; --rule:#D9CCAE; }
+    @media (prefers-color-scheme: dark) { :root { --paper:#181513; --ink:#F1EADB; --ink-soft:#B5AC97; --terracotta:#E07254; --rule:#3A332A; } }
+    *,*::before,*::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Fraunces','Iowan Old Style',Georgia,serif;
+      font-variation-settings: "opsz" 14;
+      background: var(--paper); color: var(--ink);
+      min-height: 100vh; line-height: 1.6;
+      display: grid; place-items: center;
+      padding: 2rem;
+    }
+    .panel { text-align: center; max-width: 32rem; }
+    .eyebrow {
+      font-family: 'Caveat',cursive; color: var(--terracotta);
+      font-size: 1.5rem; display: inline-block; transform: rotate(-2deg);
+    }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 350; letter-spacing: -0.025em;
+      font-variation-settings: "opsz" 144;
+      margin: 1rem 0;
+    }
+    .four {
+      font-size: clamp(5rem, 14vw, 9rem);
+      font-weight: 350; letter-spacing: -0.04em;
+      font-variation-settings: "opsz" 144;
+      color: var(--terracotta); line-height: 1;
+      margin: 0.5rem 0;
+    }
+    .squiggle { color: var(--terracotta); margin: 0 auto 1rem; display: block; }
+    p { color: var(--ink-soft); margin: 0 auto 2rem; max-width: 28ch; }
+    .actions { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+    a.btn {
+      display: inline-flex; align-items: center;
+      padding: 0.7em 1.3em;
+      border: 1.5px solid var(--ink); border-radius: 4px;
+      font-weight: 500; text-decoration: none;
+      background: var(--terracotta); border-color: var(--terracotta); color: #FFF8EE;
+      transition: transform .15s, box-shadow .15s;
+    }
+    a.btn:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--ink); }
+    a.btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+    a.btn-ghost:hover { box-shadow: 3px 3px 0 var(--terracotta); }
+  </style>
+  <script>
+    // Resolve the site root regardless of where this 404 is served from.
+    // Strategy: drop everything after the first path segment that matches a
+    // GitHub Pages project base. Fall back to '/'.
+    document.addEventListener('DOMContentLoaded', function () {
+      var path = location.pathname;
+      var parts = path.split('/').filter(Boolean);
+      // If served from username.github.io/<repo>/..., the root is /<repo>/.
+      // We can't reliably detect this client-side, so use a heuristic:
+      // if the host ends with .github.io and there's a path segment, use it.
+      var root = '/';
+      if (location.hostname.endsWith('.github.io') && parts.length > 0) {
+        root = '/' + parts[0] + '/';
+      }
+      var home = document.getElementById('home');
+      var curr = document.getElementById('curr');
+      if (home) home.href = root;
+      if (curr) curr.href = root + 'curriculum/';
+    });
+  </script>
+</head>
+<body>
+  <main class="panel">
+    <span class="eyebrow">404 — wrong page</span>
+    <div class="four">404</div>
+    <svg class="squiggle" width="200" height="14" viewBox="0 0 200 14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true">
+      <path d="M 6 8 Q 50 1 100 7 T 194 6"/>
+    </svg>
+    <h1>This page got crumpled up.</h1>
+    <p>Try the curriculum map — that’s probably where you were heading.</p>
+    <div class="actions">
+      <a id="curr" class="btn" href="/curriculum/">Curriculum</a>
+      <a id="home" class="btn btn-ghost" href="/">Home</a>
+    </div>
+  </main>
+</body>
+</html>

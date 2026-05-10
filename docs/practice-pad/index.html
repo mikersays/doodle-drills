@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Practice pad — Doodle Drills</title>
+  <meta name="description" content="A no-stakes scratch canvas for warming up the wrist before a drill. Draw, erase, save a PNG, throw it away." />
+  <meta name="theme-color" content="#FBF7F0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,30..100;1,9..144,300..900,30..100&display=swap" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/practice-pad.css" />
+</head>
+<body class="pad-page">
+  <div id="site-header" data-depth="1" data-current="pad"></div>
+
+  <main id="main">
+    <div class="pad">
+      <div class="pad__canvas-wrap">
+        <canvas id="pad-canvas"></canvas>
+        <span class="pad__hint">scratch paper · nothing here saves</span>
+      </div>
+      <div class="pad__toolbar">
+        <div class="pad__group" role="radiogroup" aria-label="Tool">
+          <button data-tool="pen" aria-pressed="true" type="button">Pen</button>
+          <button data-tool="eraser" aria-pressed="false" type="button">Eraser</button>
+        </div>
+        <div class="pad__swatches" data-swatches role="radiogroup" aria-label="Ink color"></div>
+        <div class="pad__width">
+          <label for="pad-width">Width</label>
+          <input id="pad-width" data-width type="range" min="1" max="14" step="0.5" value="2.5" />
+        </div>
+        <div class="pad__actions">
+          <button class="btn btn-ghost btn-sm" data-clear type="button">Clear</button>
+          <button class="btn btn-sm" data-save type="button">Save PNG</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="../assets/js/header.js"></script>
+  <script type="module" src="../assets/js/practice-pad.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* Print — favor the drill, hide chrome */
+@media print {
+  .site-header, .site-footer, .nav-toggle, .theme-toggle, .mobile-nav,
+  .pn-strip, .timer, .compare, .complete-block, .crumbs,
+  .toast, .skip-link, .resume-strip {
+    display: none !important;
+  }
+  body { background: #FFF; color: #000; }
+  body::before { display: none; }
+  main { padding-block: 0 !important; }
+
+  .drill-head h1 { font-size: 28pt; margin-bottom: 8pt; }
+  .drill-head__goal { font-size: 16pt; color: #000; }
+  .drill-ref {
+    border: 1pt solid #999;
+    page-break-inside: avoid;
+    margin: 12pt 0;
+    padding: 12pt;
+  }
+  .drill-ref svg { max-width: 70mm; }
+  .steps li { font-size: 11pt; padding-block: 6pt; }
+  .steps li::before { color: #000; }
+  .criteria, .mistakes { font-size: 10pt; }
+  .source-cite { font-size: 9pt; }
+
+  a { color: #000; text-decoration: none; }
+}

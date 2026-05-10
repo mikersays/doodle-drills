@@ -1,0 +1,145 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Doodle Drills home" [ref=e5] [cursor=pointer]:
+        - /url: ../
+        - text: doodle drills
+        - generic [ref=e6]: .
+      - navigation "Main" [ref=e7]:
+        - link "Curriculum" [ref=e8] [cursor=pointer]:
+          - /url: ../curriculum/
+        - link "Progress" [ref=e9] [cursor=pointer]:
+          - /url: ../progress/
+        - link "Practice pad" [ref=e10] [cursor=pointer]:
+          - /url: ../practice-pad/
+        - link "About" [ref=e11] [cursor=pointer]:
+          - /url: ../about/
+      - button "Toggle theme" [ref=e12] [cursor=pointer]:
+        - img [ref=e13]
+        - generic [ref=e16]: Toggle theme
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: the whole map
+        - heading "The Curriculum" [level=1] [ref=e21]
+        - paragraph [ref=e22]: Forty drills, organized into seven tiers, each one earning the next. The whole arc from “I can’t draw a straight line” to live sketchnoting is roughly fifty hours. Don’t rush it.
+      - generic [ref=e23]:
+        - generic [ref=e24]: your progress so far
+        - generic [ref=e25]: 0%
+        - text: 0 of 37 drills
+      - generic [ref=e26]:
+        - article [ref=e27]:
+          - generic [ref=e28]:
+            - generic [ref=e29]: Tier 1
+            - text: The Confident Line
+          - generic [ref=e30]:
+            - heading "Foundations" [level=3] [ref=e31]:
+              - link "Foundations" [ref=e32] [cursor=pointer]:
+                - /url: ../tiers/1-foundations/
+            - paragraph [ref=e33]: Train the hand and eye to produce intentional, controlled marks. Before shapes, before objects, the line itself must obey you.
+            - generic [ref=e34]:
+              - generic [ref=e41]: 0/5
+              - generic [ref=e42]: ~6 hours
+            - group [ref=e43]:
+              - generic "drills in this tier ↓" [ref=e44] [cursor=pointer]
+        - article [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]: Tier 2
+            - text: From Flat to Solid
+            - generic [ref=e48]: 4 more in Tier 1 unlocks this
+          - generic [ref=e49]:
+            - heading "Forms & Volume" [level=3] [ref=e50]:
+              - link "Forms & Volume" [ref=e51] [cursor=pointer]:
+                - /url: ../tiers/2-forms-and-volume/
+            - paragraph [ref=e52]: Convert 2D shapes into 3D forms. The leap from a child’s drawing to drawing with weight.
+            - generic [ref=e53]:
+              - generic [ref=e60]: 0/5
+              - generic [ref=e61]: ~7 hours
+            - group [ref=e62]:
+              - generic "drills in this tier ↓" [ref=e63] [cursor=pointer]
+        - article [ref=e64]:
+          - generic [ref=e65]:
+            - generic [ref=e66]: Tier 3
+            - text: The Doodler’s Vocabulary
+            - generic [ref=e67]: 4 more in Tier 2 unlocks this
+          - generic [ref=e68]:
+            - heading "The Visual Alphabet" [level=3] [ref=e69]:
+              - link "The Visual Alphabet" [ref=e70] [cursor=pointer]:
+                - /url: ../tiers/3-visual-alphabet/
+            - paragraph [ref=e71]: Build a personal library of 100+ icons and symbols you can draw without thinking. The doodler’s keyboard.
+            - generic [ref=e72]:
+              - generic [ref=e79]: 0/5
+              - generic [ref=e80]: ~10 hours
+            - group [ref=e81]:
+              - generic "drills in this tier ↓" [ref=e82] [cursor=pointer]
+        - article [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]: Tier 4
+            - text: People With Pulse
+            - generic [ref=e86]: 4 more in Tier 3 unlocks this
+          - generic [ref=e87]:
+            - heading "Faces & Figures" [level=3] [ref=e88]:
+              - link "Faces & Figures" [ref=e89] [cursor=pointer]:
+                - /url: ../tiers/4-faces-and-figures/
+            - paragraph [ref=e90]: Draw people. Specifically, doodled people that feel alive, communicate emotion, and don’t all look the same.
+            - generic [ref=e91]:
+              - generic [ref=e99]: 0/6
+              - generic [ref=e100]: ~8 hours
+            - group [ref=e101]:
+              - generic "drills in this tier ↓" [ref=e102] [cursor=pointer]
+        - article [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]: Tier 5
+            - text: Words That Pop
+            - generic [ref=e106]: 5 more in Tier 4 unlocks this
+          - generic [ref=e107]:
+            - heading "Lettering & Hierarchy" [level=3] [ref=e108]:
+              - link "Lettering & Hierarchy" [ref=e109] [cursor=pointer]:
+                - /url: ../tiers/5-lettering/
+            - paragraph [ref=e110]: Hand-lettering is half of any sketchnote. Train print, emphasis styles, banners, and the hierarchy that turns notes from a wall of text into a map.
+            - generic [ref=e111]:
+              - generic [ref=e117]: 0/4
+              - generic [ref=e118]: ~5 hours
+            - group [ref=e119]:
+              - generic "drills in this tier ↓" [ref=e120] [cursor=pointer]
+        - article [ref=e121]:
+          - generic [ref=e122]:
+            - generic [ref=e123]: Tier 6
+            - text: Whole-Page Sketchnotes
+            - generic [ref=e124]: 4 more in Tier 5 unlocks this
+          - generic [ref=e125]:
+            - heading "Composition & The Sketchnote" [level=3] [ref=e126]:
+              - link "Composition & The Sketchnote" [ref=e127] [cursor=pointer]:
+                - /url: ../tiers/6-composition/
+            - paragraph [ref=e128]: "Combine everything into full-page visual notes. The curriculum becomes applied: capture real talks, articles, and conversations."
+            - generic [ref=e129]:
+              - generic [ref=e137]: 0/6
+              - generic [ref=e138]: ~10 hours
+            - group [ref=e139]:
+              - generic "drills in this tier ↓" [ref=e140] [cursor=pointer]
+        - article [ref=e141]:
+          - generic [ref=e142]:
+            - generic [ref=e143]: Tier 7
+            - text: Personal Style
+            - generic [ref=e144]: 5 more in Tier 6 unlocks this
+          - generic [ref=e145]:
+            - heading "Personal Style & Mastery" [level=3] [ref=e146]:
+              - link "Personal Style & Mastery" [ref=e147] [cursor=pointer]:
+                - /url: ../tiers/7-mastery/
+            - paragraph [ref=e148]: Develop a recognizable voice. You know the language. Now you find your accent.
+            - generic [ref=e149]:
+              - generic [ref=e157]: 0/6
+              - generic [ref=e158]: Open-ended
+            - group [ref=e159]:
+              - generic "drills in this tier ↓" [ref=e160] [cursor=pointer]
+  - contentinfo [ref=e161]:
+    - generic [ref=e162]:
+      - generic [ref=e163]: Doodle Drills · a public-domain practice curriculum.
+      - generic [ref=e164]:
+        - link "About" [ref=e165] [cursor=pointer]:
+          - /url: ../about/
+        - text: ·
+        - link "Source" [ref=e166] [cursor=pointer]:
+          - /url: https://github.com

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="tier-slug" content="3-visual-alphabet" />
+  <title>Tier — Doodle Drills</title>
+  <meta name="description" content="" />
+  <meta name="theme-color" content="#FBF7F0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,30..100;1,9..144,300..900,30..100&display=swap" />
+  <link rel="stylesheet" href="../../assets/css/base.css" />
+  <link rel="stylesheet" href="../../assets/css/drill.css" />
+</head>
+<body>
+  <div id="site-header" data-depth="2" data-current="curriculum"></div>
+
+  <main id="main">
+    <section class="container">
+      <nav class="crumbs" data-crumbs></nav>
+      <header class="tier-hero reveal reveal--1">
+        <span data-tier-num class="tier-hero__num"></span>
+        <h1 data-tier-title></h1>
+        <span data-tier-sub class="tier-hero__sub"></span>
+        <p data-tier-desc></p>
+        <div class="tier-hero__meta">
+          <span data-tier-hours></span>
+          <span class="tally" data-tally></span>
+        </div>
+        <div data-continue style="margin-top: 1.5rem;"></div>
+        <details style="margin-top: 1.5rem;">
+          <summary style="cursor:pointer; font-family: var(--font-hand); color: var(--ink-soft); font-size: 1.15rem;">Why this tier ↓</summary>
+          <p data-tier-rationale style="margin-top:0.75rem; color: var(--ink-soft);"></p>
+        </details>
+      </header>
+
+      <h2 class="drill-section-h">What you’ll be able to do</h2>
+      <ul class="outcomes reveal reveal--2" data-outcomes></ul>
+
+      <h2 class="drill-section-h">Drills, in order</h2>
+      <ol class="drill-list reveal reveal--3" data-drills></ol>
+
+      <div class="tier-end reveal reveal--4" data-tier-end></div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="../../assets/js/header.js"></script>
+  <script type="module" src="../../assets/js/tier.js"></script>
+</body>
+</html>

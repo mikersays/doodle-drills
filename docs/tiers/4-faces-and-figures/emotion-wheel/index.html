@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="drill-key" content="4-faces-and-figures/emotion-wheel" />
+  <title>Drill — Doodle Drills</title>
+  <meta name="description" content="" />
+  <meta name="theme-color" content="#FBF7F0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,30..100;1,9..144,300..900,30..100&display=swap" />
+  <link rel="stylesheet" href="../../../assets/css/base.css" />
+  <link rel="stylesheet" href="../../../assets/css/drill.css" />
+  <link rel="stylesheet" href="../../../assets/css/print.css" />
+</head>
+<body>
+  <div id="site-header" data-depth="3" data-current="curriculum"></div>
+
+  <main id="main">
+    <section class="container">
+      <nav class="crumbs" data-crumbs></nav>
+      <a class="pill drill-head__pill" data-where-pill href="../"></a>
+
+      <header class="drill-head reveal reveal--1">
+        <h1 data-title></h1>
+        <span class="drill-head__goal handwritten" data-goal></span>
+      </header>
+
+      <div class="drill-ref reveal reveal--2" data-photo-stage>
+        <span class="drill-ref__caption">aim for this</span>
+        <div data-ref></div>
+      </div>
+
+      <details class="compare">
+        <summary>Compare your paper to the reference</summary>
+        <div class="compare__body">
+          <p class="text-soft" style="margin: 0; font-size: 0.9rem;">
+            Drop a phone photo of your page on top of the reference at adjustable opacity. The image stays on this device — nothing is uploaded.
+          </p>
+          <div class="compare__controls">
+            <input type="file" accept="image/*" data-photo-input />
+            <label>opacity
+              <input type="range" data-photo-opacity min="0.1" max="1" step="0.05" value="0.55" />
+            </label>
+            <button class="btn btn-ghost btn-sm" data-photo-clear type="button">Clear photo</button>
+          </div>
+        </div>
+      </details>
+
+      <h2 class="drill-section-h">How to do it</h2>
+      <ol class="steps reveal reveal--3" data-steps></ol>
+
+      <h2 class="drill-section-h">What to look for</h2>
+      <p class="text-soft" style="font-size: 0.95rem; margin-top: -0.5rem;">Tick whatever feels true. There’s no gold star — these are signals to yourself.</p>
+      <ul class="criteria" data-criteria></ul>
+
+      <details class="timer" data-timer>
+        <summary>Use a timer · <span data-minutes></span></summary>
+        <div class="timer__body">
+          <div class="timer__display" data-timer-display>—</div>
+          <div class="timer__controls">
+            <button class="btn btn-sm" data-timer-start type="button">Start</button>
+            <button class="btn btn-ghost btn-sm" data-timer-reset type="button">Reset</button>
+          </div>
+        </div>
+      </details>
+
+      <h2 class="drill-section-h">Common mistakes</h2>
+      <ul class="mistakes" data-mistakes></ul>
+
+      <p class="source-cite" data-citation style="display:none;"></p>
+
+      <div class="complete-block" data-complete data-ready="false" data-completed="false">
+        <span class="complete-block__hint">It doesn’t have to be perfect.</span>
+        <button class="btn btn-primary" data-complete-btn type="button">Mark drill complete</button>
+        <svg class="complete-block__stamp" viewBox="0 0 84 84" fill="none" stroke="var(--terracotta)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="42" cy="42" r="36"/>
+          <path d="M 22 44 q 9 14 18 2 q 9 -22 22 -10"/>
+        </svg>
+      </div>
+
+      <nav class="pn-strip" data-pn aria-label="Previous and next drill"></nav>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="../../../assets/js/header.js"></script>
+  <script type="module" src="../../../assets/js/drill.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Doodle Drills home" [ref=e5] [cursor=pointer]:
+        - /url: ../../
+        - text: doodle drills
+        - generic [ref=e6]: .
+      - navigation "Main" [ref=e7]:
+        - link "Curriculum" [ref=e8] [cursor=pointer]:
+          - /url: ../../curriculum/
+        - link "Progress" [ref=e9] [cursor=pointer]:
+          - /url: ../../progress/
+        - link "Practice pad" [ref=e10] [cursor=pointer]:
+          - /url: ../../practice-pad/
+        - link "About" [ref=e11] [cursor=pointer]:
+          - /url: ../../about/
+      - button "Toggle theme" [ref=e12] [cursor=pointer]:
+        - img [ref=e13]
+        - generic [ref=e16]: Toggle theme
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - navigation [ref=e19]:
+        - link "Curriculum" [ref=e20] [cursor=pointer]:
+          - /url: ../../curriculum/
+        - generic [ref=e21]: /
+        - generic [ref=e22]: "Tier 3: The Visual Alphabet"
+      - generic [ref=e23]:
+        - generic [ref=e24]: Tier 3
+        - heading "The Visual Alphabet" [level=1] [ref=e25]
+        - generic [ref=e26]: The Doodler’s Vocabulary
+        - paragraph [ref=e27]: Build a personal library of 100+ icons and symbols you can draw without thinking. The doodler’s keyboard.
+        - generic [ref=e28]:
+          - generic [ref=e29]: ~10 hours total
+          - generic [ref=e36]: 0/5
+        - link "Start Tier 3 → The Five-Element Alphabet" [ref=e38] [cursor=pointer]:
+          - /url: five-element-alphabet/
+        - group [ref=e39]:
+          - generic "Why this tier ↓" [ref=e40] [cursor=pointer]
+      - heading "What you’ll be able to do" [level=2] [ref=e41]
+      - list [ref=e42]:
+        - listitem [ref=e43]: Reliably draw 100+ icons on demand
+        - listitem [ref=e44]: "Pictionary fluency: sketch any noun a meeting throws at you"
+        - listitem [ref=e45]: Draw both objects and abstract concepts
+      - heading "Drills, in order" [level=2] [ref=e46]
+      - list [ref=e47]:
+        - listitem [ref=e48]:
+          - 'link "3.1 The Five-Element Alphabet Every icon decomposes into five elements: dot, line, angle, curve, loop. ~15 min" [ref=e49] [cursor=pointer]':
+            - /url: five-element-alphabet/
+            - generic [ref=e50]: "3.1"
+            - generic [ref=e51]:
+              - generic [ref=e52]: The Five-Element Alphabet
+              - generic [ref=e53]: "Every icon decomposes into five elements: dot, line, angle, curve, loop."
+            - generic [ref=e54]: ~15 min
+        - listitem [ref=e55]:
+          - link "3.2 The Hundred-Icon Sprint Vocabulary breadth. Brute-force vocabulary builder. ~20 min" [ref=e56] [cursor=pointer]:
+            - /url: hundred-icon-sprint/
+            - generic [ref=e57]: "3.2"
+            - generic [ref=e58]:
+              - generic [ref=e59]: The Hundred-Icon Sprint
+              - generic [ref=e60]: Vocabulary breadth. Brute-force vocabulary builder.
+            - generic [ref=e61]: ~20 min
+        - listitem [ref=e62]:
+          - link "3.3 Containers & Connectors The grammar of sketchnoting — boxes, banners, arrows, dividers. ~15 min" [ref=e63] [cursor=pointer]:
+            - /url: containers-and-connectors/
+            - generic [ref=e64]: "3.3"
+            - generic [ref=e65]:
+              - generic [ref=e66]: Containers & Connectors
+              - generic [ref=e67]: The grammar of sketchnoting — boxes, banners, arrows, dividers.
+            - generic [ref=e68]: ~15 min
+        - listitem [ref=e69]:
+          - link "3.4 The Concept Translator Drawing abstractions — the hardest part of sketchnoting. ~20 min" [ref=e70] [cursor=pointer]:
+            - /url: concept-translator/
+            - generic [ref=e71]: "3.4"
+            - generic [ref=e72]:
+              - generic [ref=e73]: The Concept Translator
+              - generic [ref=e74]: Drawing abstractions — the hardest part of sketchnoting.
+            - generic [ref=e75]: ~20 min
+        - listitem [ref=e76]:
+          - link "3.5 Iconize Your Day Spontaneous icon generation under real-world conditions. ~5 min" [ref=e77] [cursor=pointer]:
+            - /url: iconize-your-day/
+            - generic [ref=e78]: "3.5"
+            - generic [ref=e79]:
+              - generic [ref=e80]: Iconize Your Day
+              - generic [ref=e81]: Spontaneous icon generation under real-world conditions.
+            - generic [ref=e82]: ~5 min
+      - generic [ref=e83]:
+        - heading "When you finish this tier" [level=3] [ref=e84]
+        - paragraph [ref=e85]:
+          - text: You unlock
+          - 'link "Tier 4: Faces & Figures" [ref=e86] [cursor=pointer]':
+            - /url: ../4-faces-and-figures/
+          - text: . Don’t rush — the muscles you build here are the ones that hold up the next tier.
+  - contentinfo [ref=e87]:
+    - generic [ref=e88]:
+      - generic [ref=e89]: Doodle Drills · a public-domain practice curriculum.
+      - generic [ref=e90]:
+        - link "About" [ref=e91] [cursor=pointer]:
+          - /url: ../../about/
+        - text: ·
+        - link "Source" [ref=e92] [cursor=pointer]:
+          - /url: https://github.com

@@ -1,0 +1,133 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Doodle Drills home" [ref=e5] [cursor=pointer]:
+        - /url: ./
+        - text: doodle drills
+        - generic [ref=e6]: .
+      - navigation "Main" [ref=e7]:
+        - link "Curriculum" [ref=e8] [cursor=pointer]:
+          - /url: curriculum/
+        - link "Progress" [ref=e9] [cursor=pointer]:
+          - /url: progress/
+        - link "Practice pad" [ref=e10] [cursor=pointer]:
+          - /url: practice-pad/
+        - link "About" [ref=e11] [cursor=pointer]:
+          - /url: about/
+      - button "Toggle theme" [ref=e12] [cursor=pointer]:
+        - img [ref=e13]
+        - generic [ref=e16]: Toggle theme
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: for absolute beginners
+      - heading "Learn to doodle. One small drill at a time." [level=1] [ref=e20]:
+        - text: Learn to doodle.
+        - generic [ref=e21]: One small drill
+        - text: at a time.
+      - paragraph [ref=e22]: No drawing experience required. Forty practice drills, in order. Fifteen minutes a day. Real progress in a month.
+      - generic [ref=e23]:
+        - link "Start at zero — Drill 1" [ref=e24] [cursor=pointer]:
+          - /url: tiers/1-foundations/ghost-lines/
+        - link "See the curriculum" [ref=e25] [cursor=pointer]:
+          - /url: curriculum/
+      - paragraph [ref=e26]: No account. Progress saves on this device. Made for paper, pen, and patience.
+      - img:
+        - generic:
+          - generic: Tier 1
+          - generic: Ghost lines
+          - generic: Three mothers
+          - generic: Pressure ladder
+          - generic: Ellipse field
+        - generic:
+          - generic: Tier 3
+          - generic:
+            - generic: $
+          - generic: 100 icons →
+    - img [ref=e28]
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - heading "How it works" [level=2] [ref=e32]
+        - generic [ref=e33]: three steps, on repeat
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]: "1"
+          - heading "Watch" [level=3] [ref=e37]
+          - paragraph [ref=e38]: "Open a drill. Look at the small reference and read the four-or-so steps. Total: ~30 seconds."
+        - generic [ref=e39]:
+          - generic [ref=e40]: "2"
+          - heading "Practice" [level=3] [ref=e41]
+          - paragraph [ref=e42]: Pen and paper at your desk. Set a soft timer. Fill the page. Most drills are 10 minutes.
+        - generic [ref=e43]:
+          - generic [ref=e44]: "3"
+          - heading "Mark done" [level=3] [ref=e45]
+          - paragraph [ref=e46]: Tick the success boxes. Tomorrow, the next drill. The site keeps your place; come back any time.
+    - img [ref=e48]
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - heading "The journey" [level=2] [ref=e52]
+        - generic [ref=e53]: seven tiers · roughly 50–60 hours, total
+      - generic [ref=e54]:
+        - link "Tier 1 Foundations The Confident Line Train the hand and eye to produce intentional, controlled marks. Before shapes, before objects, the line itself must obey you. 0/5" [ref=e55] [cursor=pointer]:
+          - /url: tiers/1-foundations/
+          - generic [ref=e56]: Tier 1
+          - heading "Foundations" [level=3] [ref=e57]
+          - generic [ref=e58]: The Confident Line
+          - paragraph [ref=e59]: Train the hand and eye to produce intentional, controlled marks. Before shapes, before objects, the line itself must obey you.
+          - generic [ref=e67]: 0/5
+        - link "Tier 2 · locked Forms & Volume From Flat to Solid Convert 2D shapes into 3D forms. The leap from a child’s drawing to drawing with weight. 0/5" [ref=e68] [cursor=pointer]:
+          - /url: tiers/2-forms-and-volume/
+          - generic [ref=e69]: Tier 2 · locked
+          - heading "Forms & Volume" [level=3] [ref=e70]
+          - generic [ref=e71]: From Flat to Solid
+          - paragraph [ref=e72]: Convert 2D shapes into 3D forms. The leap from a child’s drawing to drawing with weight.
+          - generic [ref=e80]: 0/5
+        - link "Tier 3 · locked The Visual Alphabet The Doodler’s Vocabulary Build a personal library of 100+ icons and symbols you can draw without thinking. The doodler’s keyboard. 0/5" [ref=e81] [cursor=pointer]:
+          - /url: tiers/3-visual-alphabet/
+          - generic [ref=e82]: Tier 3 · locked
+          - heading "The Visual Alphabet" [level=3] [ref=e83]
+          - generic [ref=e84]: The Doodler’s Vocabulary
+          - paragraph [ref=e85]: Build a personal library of 100+ icons and symbols you can draw without thinking. The doodler’s keyboard.
+          - generic [ref=e93]: 0/5
+        - link "Tier 4 · locked Faces & Figures People With Pulse Draw people. Specifically, doodled people that feel alive, communicate emotion, and don’t all look the same. 0/6" [ref=e94] [cursor=pointer]:
+          - /url: tiers/4-faces-and-figures/
+          - generic [ref=e95]: Tier 4 · locked
+          - heading "Faces & Figures" [level=3] [ref=e96]
+          - generic [ref=e97]: People With Pulse
+          - paragraph [ref=e98]: Draw people. Specifically, doodled people that feel alive, communicate emotion, and don’t all look the same.
+          - generic [ref=e107]: 0/6
+        - link "Tier 5 · locked Lettering & Hierarchy Words That Pop Hand-lettering is half of any sketchnote. Train print, emphasis styles, banners, and the hierarchy that turns notes from a wall of text into a map. 0/4" [ref=e108] [cursor=pointer]:
+          - /url: tiers/5-lettering/
+          - generic [ref=e109]: Tier 5 · locked
+          - heading "Lettering & Hierarchy" [level=3] [ref=e110]
+          - generic [ref=e111]: Words That Pop
+          - paragraph [ref=e112]: Hand-lettering is half of any sketchnote. Train print, emphasis styles, banners, and the hierarchy that turns notes from a wall of text into a map.
+          - generic [ref=e119]: 0/4
+        - 'link "Tier 6 · locked Composition & The Sketchnote Whole-Page Sketchnotes Combine everything into full-page visual notes. The curriculum becomes applied: capture real talks, articles, and conversations. 0/6" [ref=e120] [cursor=pointer]':
+          - /url: tiers/6-composition/
+          - generic [ref=e121]: Tier 6 · locked
+          - heading "Composition & The Sketchnote" [level=3] [ref=e122]
+          - generic [ref=e123]: Whole-Page Sketchnotes
+          - paragraph [ref=e124]: "Combine everything into full-page visual notes. The curriculum becomes applied: capture real talks, articles, and conversations."
+          - generic [ref=e133]: 0/6
+        - link "Tier 7 · locked Personal Style & Mastery Personal Style Develop a recognizable voice. You know the language. Now you find your accent. 0/6" [ref=e134] [cursor=pointer]:
+          - /url: tiers/7-mastery/
+          - generic [ref=e135]: Tier 7 · locked
+          - heading "Personal Style & Mastery" [level=3] [ref=e136]
+          - generic [ref=e137]: Personal Style
+          - paragraph [ref=e138]: Develop a recognizable voice. You know the language. Now you find your accent.
+          - generic [ref=e147]: 0/6
+    - img [ref=e149]
+    - generic [ref=e151]:
+      - text: P.S.
+      - paragraph [ref=e152]: You can’t doodle wrong. The drills are practice, not performance. Bad pages are part of the deal. Date them, keep them, move on.
+  - contentinfo [ref=e153]:
+    - generic [ref=e154]:
+      - generic [ref=e155]: Doodle Drills · a public-domain practice curriculum.
+      - generic [ref=e156]:
+        - link "About" [ref=e157] [cursor=pointer]:
+          - /url: about/
+        - text: ·
+        - link "Source" [ref=e158] [cursor=pointer]:
+          - /url: https://github.com
