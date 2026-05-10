@@ -73,18 +73,28 @@ export const drills = {
       <rect x="134" y="90" width="56" height="36"/>
       </g>
       <g stroke-width="1.1">
+      <!-- (1,1) parallel lines -->
       <line x1="14" y1="16" x2="64" y2="16"/><line x1="14" y1="22" x2="64" y2="22"/><line x1="14" y1="28" x2="64" y2="28"/><line x1="14" y1="34" x2="64" y2="34"/><line x1="14" y1="40" x2="64" y2="40"/>
+      <!-- (1,2) wavy -->
       <path d="M 76 18 q 5 -6 10 0 t 10 0 t 10 0 t 10 0 t 10 0"/>
       <path d="M 76 30 q 5 -6 10 0 t 10 0 t 10 0 t 10 0 t 10 0"/>
+      <!-- (1,3) zigzag -->
       <path d="M 138 16 l 6 8 l 6 -8 l 6 8 l 6 -8 l 6 8 l 6 -8 l 6 8"/>
-      <circle cx="20" cy="60" r="4"/><circle cx="34" cy="60" r="4"/><circle cx="48" cy="60" r="4"/><circle cx="20" cy="74" r="4"/><circle cx="48" cy="74" r="4"/>
+      <path d="M 138 32 l 6 8 l 6 -8 l 6 8 l 6 -8 l 6 8 l 6 -8 l 6 8"/>
+      <!-- (2,1) loops/coils — chain of overlapping circles -->
+      <circle cx="18" cy="64" r="4"/><circle cx="26" cy="64" r="4"/><circle cx="34" cy="64" r="4"/><circle cx="42" cy="64" r="4"/><circle cx="50" cy="64" r="4"/><circle cx="58" cy="64" r="4"/>
+      <circle cx="18" cy="76" r="4"/><circle cx="26" cy="76" r="4"/><circle cx="34" cy="76" r="4"/><circle cx="42" cy="76" r="4"/><circle cx="50" cy="76" r="4"/><circle cx="58" cy="76" r="4"/>
+      <!-- (2,2) dots -->
       <circle cx="80" cy="60" r="1.4" fill="currentColor"/><circle cx="92" cy="60" r="1.4" fill="currentColor"/><circle cx="104" cy="60" r="1.4" fill="currentColor"/><circle cx="116" cy="60" r="1.4" fill="currentColor"/><circle cx="80" cy="72" r="1.4" fill="currentColor"/><circle cx="92" cy="72" r="1.4" fill="currentColor"/><circle cx="104" cy="72" r="1.4" fill="currentColor"/><circle cx="116" cy="72" r="1.4" fill="currentColor"/>
-      <line x1="138" y1="60" x2="142" y2="60"/><line x1="146" y1="60" x2="150" y2="60"/><line x1="154" y1="60" x2="158" y2="60"/><line x1="162" y1="60" x2="166" y2="60"/><line x1="170" y1="60" x2="174" y2="60"/><line x1="138" y1="70" x2="142" y2="70"/><line x1="146" y1="70" x2="150" y2="70"/><line x1="154" y1="70" x2="158" y2="70"/>
-      <line x1="14" y1="96" x2="64" y2="124"/><line x1="14" y1="104" x2="64" y2="124"/><line x1="14" y1="112" x2="64" y2="124"/><line x1="14" y1="124" x2="64" y2="96"/><line x1="14" y1="124" x2="64" y2="108"/>
-      <path d="M 78 102 q 6 6 12 0 q 6 -6 12 0 q 6 6 12 0 q 6 -6 12 0 q 6 6 12 0"/>
-      <path d="M 78 116 q 6 6 12 0 q 6 -6 12 0 q 6 6 12 0 q 6 -6 12 0 q 6 6 12 0"/>
-      <path d="M 152 96 m 0 12 a 8 8 0 1 1 0.001 0 a 12 12 0 1 1 -0.001 -0.001"/>
-      <path d="M 172 100 m 0 8 a 6 6 0 1 1 0.001 0 a 10 10 0 1 1 -0.001 -0.001"/>
+      <!-- (2,3) dashes -->
+      <line x1="138" y1="60" x2="142" y2="60"/><line x1="146" y1="60" x2="150" y2="60"/><line x1="154" y1="60" x2="158" y2="60"/><line x1="162" y1="60" x2="166" y2="60"/><line x1="170" y1="60" x2="174" y2="60"/><line x1="138" y1="70" x2="142" y2="70"/><line x1="146" y1="70" x2="150" y2="70"/><line x1="154" y1="70" x2="158" y2="70"/><line x1="162" y1="70" x2="166" y2="70"/><line x1="170" y1="70" x2="174" y2="70"/>
+      <!-- (3,1) cross-hatching: two sets of diagonals -->
+      <line x1="14" y1="96" x2="64" y2="124"/><line x1="14" y1="104" x2="56" y2="124"/><line x1="22" y1="96" x2="64" y2="118"/><line x1="14" y1="124" x2="64" y2="96"/><line x1="14" y1="116" x2="50" y2="96"/><line x1="22" y1="124" x2="64" y2="104"/>
+      <!-- (3,2) scribble fill: a tight zigzag-meander filling the cell -->
+      <path d="M 78 96 l 6 6 l -4 6 l 6 6 l -4 6 l 6 6 l -4 -2 l 6 -8 l -4 -8 l 6 -6 l -4 -6 l 8 4 l 4 6 l -2 6 l 4 8 l -4 6 l 6 -2 l 4 -8 l -2 -10 l 4 -2"/>
+      <!-- (3,3) tight spirals: hand-drawn-style nested loops -->
+      <path d="M 148 116 q -6 -2 -6 -8 q 0 -8 8 -8 q 10 0 10 10 q 0 12 -14 12"/>
+      <path d="M 174 112 q -4 -1 -4 -6 q 0 -6 6 -6 q 8 0 8 8 q 0 10 -12 10"/>
       </g>
     `),
   },
@@ -204,15 +214,19 @@ export const drills = {
       'Inconsistent perspective angle from cube to cube. Pick one and commit.',
     ],
     referenceSVG: svg(`
+      <!-- front face (terracotta square) -->
       <rect x="40" y="50" width="70" height="70" stroke="var(--terracotta)" stroke-width="2.5"/>
+      <!-- diagonals from the four front corners up-and-right (depth = 30,-30) -->
       <line x1="40" y1="50" x2="70" y2="20"/>
       <line x1="110" y1="50" x2="140" y2="20"/>
       <line x1="110" y1="120" x2="140" y2="90"/>
+      <!-- visible back edges: top of back face, right of back face -->
       <line x1="70" y1="20" x2="140" y2="20"/>
       <line x1="140" y1="20" x2="140" y2="90"/>
-      <line x1="70" y1="20" x2="70" y2="50" stroke-dasharray="2 4" opacity="0.5"/>
-      <line x1="70" y1="50" x2="140" y2="50" stroke-dasharray="2 4" opacity="0.5"/>
-      <line x1="70" y1="50" x2="70" y2="120" stroke-dasharray="2 4" opacity="0.5"/>
+      <!-- hidden edges (dashed): the three meeting at back-bottom-left (70,90) -->
+      <line x1="40" y1="120" x2="70" y2="90" stroke-dasharray="2 4" opacity="0.55"/>
+      <line x1="70" y1="20"  x2="70" y2="90" stroke-dasharray="2 4" opacity="0.55"/>
+      <line x1="70" y1="90"  x2="140" y2="90" stroke-dasharray="2 4" opacity="0.55"/>
     `),
   },
 
@@ -265,19 +279,31 @@ export const drills = {
       'Outlining the shadow then filling it — let the lines themselves be the shadow.',
     ],
     referenceSVG: svg(`
-      <circle cx="60" cy="65" r="32"/>
-      <path d="M 65 45 a 30 30 0 0 1 26 38" stroke-width="1"/>
-      <path d="M 70 50 a 26 26 0 0 1 22 34" stroke-width="1"/>
-      <path d="M 75 56 a 22 22 0 0 1 18 30" stroke-width="1"/>
-      <path d="M 81 64 a 17 17 0 0 1 13 24" stroke-width="1"/>
-      <path d="M 88 72 a 12 12 0 0 1 8 18" stroke-width="1"/>
-      <circle cx="50" cy="55" r="6" fill="var(--paper)" stroke="none"/>
-      <line x1="120" y1="90" x2="135" y2="105"/>
-      <line x1="125" y1="90" x2="140" y2="105"/>
-      <line x1="130" y1="90" x2="145" y2="105"/>
-      <line x1="135" y1="90" x2="150" y2="105"/>
-      <line x1="140" y1="90" x2="155" y2="105"/>
-      <text x="155" y="35" text-anchor="end" font-family="Caveat, cursive" font-size="13" fill="var(--terracotta)" stroke="none">light from here ↗</text>
+      <!-- light arrow pointing into upper-left of the sphere -->
+      <text x="20" y="20" font-family="Caveat, cursive" font-size="13" fill="var(--terracotta)" stroke="none">↖ light</text>
+      <!-- sphere -->
+      <circle cx="55" cy="70" r="28"/>
+      <!-- highlight pip on the lit side -->
+      <circle cx="44" cy="60" r="4" fill="var(--paper)" stroke="none"/>
+      <!-- curved hatching on the shadow side, denser closer to the terminator -->
+      <path d="M 70 49 a 26 26 0 0 1 8 38" stroke-width="1"/>
+      <path d="M 73 53 a 23 23 0 0 1 8 32" stroke-width="1"/>
+      <path d="M 76 58 a 20 20 0 0 1 7 28" stroke-width="1"/>
+      <path d="M 78 64 a 16 16 0 0 1 6 22" stroke-width="1"/>
+      <path d="M 79 70 a 12 12 0 0 1 5 16" stroke-width="1"/>
+      <!-- cube on the right with vertical hatching on the shadow face -->
+      <rect x="115" y="48" width="40" height="40" stroke-width="1.6"/>
+      <line x1="115" y1="48" x2="135" y2="32"/>
+      <line x1="155" y1="48" x2="175" y2="32"/>
+      <line x1="155" y1="88" x2="175" y2="72"/>
+      <line x1="135" y1="32" x2="175" y2="32"/>
+      <line x1="175" y1="32" x2="175" y2="72"/>
+      <!-- vertical hatching on the right (shadow) face -->
+      <line x1="158" y1="50" x2="172" y2="34" stroke-width="1"/>
+      <line x1="158" y1="58" x2="172" y2="42" stroke-width="1"/>
+      <line x1="158" y1="66" x2="172" y2="50" stroke-width="1"/>
+      <line x1="158" y1="74" x2="172" y2="58" stroke-width="1"/>
+      <line x1="158" y1="82" x2="172" y2="66" stroke-width="1"/>
     `),
   },
 
@@ -300,18 +326,20 @@ export const drills = {
       'Choosing only easy objects. Pick one weird one.',
     ],
     referenceSVG: svg(`
+      <!-- primitives: cylinder + small torus for handle, all dashed/faint -->
       <ellipse cx="40" cy="30" rx="20" ry="6" opacity="0.5" stroke-dasharray="3 3"/>
       <line x1="20" y1="30" x2="20" y2="80" opacity="0.5" stroke-dasharray="3 3"/>
       <line x1="60" y1="30" x2="60" y2="80" opacity="0.5" stroke-dasharray="3 3"/>
       <ellipse cx="40" cy="80" rx="20" ry="9" opacity="0.5" stroke-dasharray="3 3"/>
-      <circle cx="76" cy="55" r="9" opacity="0.5" stroke-dasharray="3 3"/>
-      <text x="40" y="105" text-anchor="middle" font-family="Caveat, cursive" font-size="14" fill="var(--ink-soft)" stroke="none">primitives</text>
-      <path d="M 110 30 Q 120 22 145 22 Q 170 22 180 30" stroke="var(--terracotta)" stroke-width="2.5"/>
-      <line x1="110" y1="30" x2="110" y2="78" stroke="var(--terracotta)" stroke-width="2.5"/>
-      <line x1="180" y1="30" x2="180" y2="78" stroke="var(--terracotta)" stroke-width="2.5"/>
-      <path d="M 110 78 Q 145 92 180 78" stroke="var(--terracotta)" stroke-width="2.5"/>
-      <path d="M 180 38 Q 196 38 196 55 Q 196 70 180 70" stroke="var(--terracotta)" stroke-width="2.5"/>
-      <text x="145" y="105" text-anchor="middle" font-family="Caveat, cursive" font-size="14" fill="var(--terracotta)" stroke="none">mug</text>
+      <ellipse cx="74" cy="50" rx="9" ry="11" opacity="0.5" stroke-dasharray="3 3"/>
+      <text x="40" y="108" text-anchor="middle" font-family="Caveat, cursive" font-size="14" fill="var(--ink-soft)" stroke="none">primitives</text>
+      <!-- inked mug: rim ellipse on top, straight sides, rounded bottom, D-handle -->
+      <ellipse cx="140" cy="32" rx="28" ry="7" stroke="var(--terracotta)" stroke-width="2.5"/>
+      <line x1="112" y1="32" x2="112" y2="78" stroke="var(--terracotta)" stroke-width="2.5"/>
+      <line x1="168" y1="32" x2="168" y2="78" stroke="var(--terracotta)" stroke-width="2.5"/>
+      <path d="M 112 78 Q 140 90 168 78" stroke="var(--terracotta)" stroke-width="2.5"/>
+      <path d="M 168 42 Q 188 42 188 56 Q 188 70 168 70" stroke="var(--terracotta)" stroke-width="2.5"/>
+      <text x="140" y="108" text-anchor="middle" font-family="Caveat, cursive" font-size="14" fill="var(--terracotta)" stroke="none">mug</text>
     `),
   },
 
@@ -415,19 +443,43 @@ export const drills = {
       <rect x="102" y="78" width="40" height="28"/>
       <rect x="146" y="78" width="40" height="28"/>
       </g>
-      <g stroke-width="1.6">
-      <path d="M 24 34 Q 27 22 34 22 Q 41 22 44 32 L 44 36 L 26 36 Z"/><path d="M 44 28 q 4 0 4 4 q 0 4 -4 4"/>
-      <rect x="68" y="20" width="22" height="18" rx="3"/><circle cx="79" cy="34" r="1" fill="currentColor"/>
-      <circle cx="122" cy="28" r="6"/><line x1="122" y1="22" x2="122" y2="18"/><line x1="122" y1="34" x2="122" y2="38"/><line x1="116" y1="28" x2="112" y2="28"/><line x1="128" y1="28" x2="132" y2="28"/>
-      <path d="M 156 38 L 158 30 Q 158 22 168 22 Q 178 22 178 32 L 180 38 Z"/>
-      <path d="M 28 56 c -8 6 0 14 6 8 c 6 6 14 -2 6 -8 c 0 -6 -12 -6 -12 0 z"/>
-      <path d="M 64 70 L 76 56 L 88 70 L 84 70 L 84 60 L 76 65 L 68 60 L 68 70 Z"/>
-      <circle cx="122" cy="62" r="8"/><line x1="122" y1="62" x2="126" y2="58"/><line x1="122" y1="62" x2="122" y2="56"/>
-      <path d="M 168 56 L 156 70 L 168 66 L 162 78"/>
-      <circle cx="34" cy="92" r="8"/><circle cx="34" cy="92" r="3"/><line x1="32" y1="84" x2="32" y2="80"/><line x1="36" y1="84" x2="36" y2="80"/>
-      <circle cx="78" cy="92" r="8"/><line x1="86" y1="92" x2="92" y2="92"/><line x1="78" y1="98" x2="78" y2="92"/>
-      <path d="M 110 100 L 134 100 L 130 86 L 114 86 Z"/>
-      <text x="166" y="98" font-family="Fraunces, serif" font-size="14" font-weight="700" fill="var(--terracotta)" stroke="none">$</text>
+      <g stroke-width="1.5">
+      <!-- (1,1) coffee mug: rim ellipse + body + handle -->
+      <ellipse cx="32" cy="22" rx="9" ry="2"/>
+      <path d="M 23 22 L 23 36 Q 32 39 41 36 L 41 22"/>
+      <path d="M 41 26 q 5 0 5 4 q 0 4 -5 4"/>
+      <!-- (1,2) phone -->
+      <rect x="71" y="18" width="14" height="20" rx="2"/><line x1="73" y1="22" x2="83" y2="22"/><circle cx="78" cy="35" r="0.9" fill="currentColor"/>
+      <!-- (1,3) sun -->
+      <circle cx="122" cy="28" r="5"/><line x1="122" y1="22" x2="122" y2="18"/><line x1="122" y1="34" x2="122" y2="38"/><line x1="116" y1="28" x2="112" y2="28"/><line x1="128" y1="28" x2="132" y2="28"/><line x1="118" y1="24" x2="115" y2="21"/><line x1="126" y1="24" x2="129" y2="21"/><line x1="118" y1="32" x2="115" y2="35"/><line x1="126" y1="32" x2="129" y2="35"/>
+      <!-- (1,4) lightbulb -->
+      <path d="M 161 36 L 161 32 q -5 -3 -5 -8 q 0 -8 10 -8 q 10 0 10 8 q 0 5 -5 8 L 171 36 Z"/>
+      <line x1="162" y1="38" x2="170" y2="38"/>
+      <!-- (2,1) heart -->
+      <path d="M 34 70 q -10 -6 -10 -12 q 0 -6 6 -6 q 4 0 4 4 q 0 -4 4 -4 q 6 0 6 6 q 0 6 -10 12 z" fill="var(--terracotta)" stroke="var(--terracotta)"/>
+      <!-- (2,2) book — closed, with spine -->
+      <rect x="66" y="55" width="24" height="16" rx="1"/>
+      <line x1="78" y1="55" x2="78" y2="71"/>
+      <line x1="69" y1="59" x2="75" y2="59"/>
+      <line x1="81" y1="59" x2="87" y2="59"/>
+      <!-- (2,3) clock -->
+      <circle cx="122" cy="60" r="8"/><line x1="122" y1="60" x2="122" y2="55"/><line x1="122" y1="60" x2="126" y2="60"/>
+      <!-- (2,4) gear -->
+      <circle cx="166" cy="60" r="5"/><circle cx="166" cy="60" r="1.6" fill="currentColor"/>
+      <line x1="166" y1="50" x2="166" y2="53"/><line x1="166" y1="67" x2="166" y2="70"/><line x1="156" y1="60" x2="159" y2="60"/><line x1="173" y1="60" x2="176" y2="60"/><line x1="159" y1="53" x2="161" y2="55"/><line x1="171" y1="65" x2="173" y2="67"/><line x1="159" y1="67" x2="161" y2="65"/><line x1="171" y1="55" x2="173" y2="53"/>
+      <!-- (3,1) eye -->
+      <path d="M 18 92 q 16 -10 32 0 q -16 10 -32 0 z"/>
+      <circle cx="34" cy="92" r="3" fill="currentColor"/>
+      <!-- (3,2) key -->
+      <circle cx="68" cy="92" r="4"/>
+      <line x1="72" y1="92" x2="92" y2="92"/>
+      <line x1="86" y1="92" x2="86" y2="96"/>
+      <line x1="90" y1="92" x2="90" y2="96"/>
+      <!-- (3,3) laptop -->
+      <path d="M 110 102 L 134 102 L 132 88 L 112 88 Z"/>
+      <line x1="108" y1="102" x2="136" y2="102"/>
+      <!-- (3,4) dollar -->
+      <text x="166" y="100" font-family="Fraunces, serif" font-size="20" font-weight="700" fill="var(--terracotta)" stroke="none">$</text>
       </g>
     `),
   },
@@ -613,12 +665,14 @@ export const drills = {
     ],
     sourceCitation: 'Mike Rohde, The Sketchnote Handbook.',
     referenceSVG: svg(`
-      <circle cx="60" cy="35" r="11"/>
-      <path d="M 60 46 L 30 70 M 60 46 L 90 70 M 60 50 L 48 105 M 60 50 L 72 105 M 60 50 L 60 80" stroke-width="2.5"/>
-      <circle cx="140" cy="35" r="11" stroke="var(--terracotta)" stroke-width="2.5"/>
-      <path d="M 140 46 L 116 30 M 140 46 L 164 30 M 140 50 L 124 105 M 140 50 L 158 105 M 140 50 L 140 80" stroke="var(--terracotta)" stroke-width="2.5"/>
-      <text x="60" y="125" text-anchor="middle" font-family="Caveat, cursive" font-size="12" fill="var(--ink-soft)" stroke="none">neutral</text>
-      <text x="140" y="125" text-anchor="middle" font-family="Caveat, cursive" font-size="12" fill="var(--terracotta)" stroke="none">arms up</text>
+      <!-- neutral star person: head + 4 limbs radiating from one torso point at (60,55) -->
+      <circle cx="60" cy="40" r="12"/>
+      <path d="M 60 55 L 28 78  M 60 55 L 92 78  M 60 55 L 42 105  M 60 55 L 78 105" stroke-width="2.5"/>
+      <!-- arms-up version: same torso point, arms up-and-out -->
+      <circle cx="140" cy="40" r="12" stroke="var(--terracotta)" stroke-width="2.5"/>
+      <path d="M 140 55 L 110 30  M 140 55 L 170 30  M 140 55 L 122 105  M 140 55 L 158 105" stroke="var(--terracotta)" stroke-width="2.5"/>
+      <text x="60"  y="128" text-anchor="middle" font-family="Caveat, cursive" font-size="12" fill="var(--ink-soft)" stroke="none">neutral</text>
+      <text x="140" y="128" text-anchor="middle" font-family="Caveat, cursive" font-size="12" fill="var(--terracotta)" stroke="none">arms up</text>
     `),
   },
 
