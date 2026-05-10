@@ -23,6 +23,7 @@ function navLinks(depth, current) {
   const r = relPrefix(depth);
   const items = [
     { id: 'curriculum', href: `${r}curriculum/`, label: 'Curriculum' },
+    { id: 'handbook',   href: `${r}handbook/`,   label: 'Handbook' },
     { id: 'progress',   href: `${r}progress/`,   label: 'Progress' },
     { id: 'pad',        href: `${r}practice-pad/`, label: 'Practice pad' },
     { id: 'about',      href: `${r}about/`,      label: 'About' },
